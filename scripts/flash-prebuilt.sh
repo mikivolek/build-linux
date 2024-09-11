@@ -36,7 +36,7 @@ while [ $# -gt 0 ]; do
     case $1 in
         lenovo-thinkpad-t14s)
 	    NAME="Lenovo ThinkPad 14s G6"
-            DBTREAL=x1e78100-lenovo-thinkpad-t14s.dtb
+            DTBREAL=x1e78100-lenovo-thinkpad-t14s.dtb
 	    ;;
         asus-tp370ql)
 	    NAME="ASUS TP370QL"
