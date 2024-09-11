@@ -10,7 +10,7 @@ print_blue()
 function usage()
 {
     print_blue ""
-    print_blue "USAGE: $0 [asus-tp370ql|hp-envy-x2|lenovo-miix-630|lenovo-yoga-c630] [/dev/<SDCARD>] [IMAGE]"
+    print_blue "USAGE: $0 [asus-tp370ql|hp-envy-x2|lenovo-miix-630|lenovo-yoga-c630]|lenovo-thinkpad-t14s [/dev/<SDCARD>] [IMAGE]"
     print_blue ""
     print_blue "Where <SDCARD> is the whole device i.e. /dev/sda, and not /dev/sda1"
     return 1
@@ -34,6 +34,10 @@ fi
 
 while [ $# -gt 0 ]; do
     case $1 in
+        lenovo-thinkpad-t14s)
+	    NAME="Lenovo ThinkPad 14s G6"
+            DBTREAL=x1e78100-lenovo-thinkpad-t14s.dtb
+	    ;;
         asus-tp370ql)
 	    NAME="ASUS TP370QL"
 	    DTBREAL=laptop-asus-tp370ql.dtb
