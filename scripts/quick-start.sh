@@ -25,7 +25,7 @@ fi
 
 while [ $# -gt 0 ]; do
     case $1 in
-        asus-tp370ql|hp-envy-x2|lenovo-miix-630|lenovo-yoga-c630|generic)
+        asus-tp370ql|hp-envy-x2|lenovo-miix-630|lenovo-yoga-c630|lenovo-thinkpad-t14s|generic)
             DEVICE=$1
             ;;
         kernel)
