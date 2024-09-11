@@ -4,7 +4,7 @@
 	branch = laptops
 [submodule "src/linux"]
 	path = src/linux
-	url = https://github.com/aarch64-laptops/linux.git
+	url = https://github.com/mikivolek/linux.git
 	branch = laptops
 [submodule "src/linux-meta"]
 	path = src/linux-meta
