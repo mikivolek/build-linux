@@ -11,7 +11,7 @@ print_green()
 
 function usage()
 {
-    print_green "USAGE: $0 [asus-tp370ql|hp-envy-x2]lenovo-miix-630|lenovo-yoga-c630|generic]"
+    print_green "USAGE: $0 [asus-tp370ql|hp-envy-x2]lenovo-miix-630|lenovo-yoga-c630|lenovo-thinkpad-t14s|generic]"
     return 1
 }
 
@@ -22,6 +22,10 @@ fi
 
 while [ $# -gt 0 ]; do
     case $1 in
+        lenovo-thinkpad-t14s)
+	    NAME="Lenovo ThinkPad 14s G6"
+            DTB=x1e78100-lenovo-thinkpad-t14s.dtb
+	    ;;
         asus-tp370ql)
             NAME="ASUS TP370QL"
             DTB=laptop-asus-tp370ql.dtb
