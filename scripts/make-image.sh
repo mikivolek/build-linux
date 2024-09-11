@@ -285,7 +285,7 @@ build_kernel()
 	bindeb-pkg
 
     print_red "Copying *.debs and DTB to $OUTDIR"
-    cp $SRCDIR/linux-*.deb $SRCDIR/build-arm64/arch/arm64/boot/dts/qcom/laptop*.dtb $OUTDIR
+    cp $SRCDIR/linux-*.deb $SRCDIR/build-arm64/arch/arm64/boot/dts/qcom/x1e78100*.dtb $SRCDIR/build-arm64/arch/arm64/boot/dts/qcom/x1e80100*.dtb $OUTDIR
 }
 
 build_grub()
