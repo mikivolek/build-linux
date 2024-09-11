@@ -13,6 +13,7 @@ RUN set -ex;                                   \
     apt upgrade -y;                            \
     apt install -y                             \
         net-tools                              \
+        libelf-dev                             \
         nmap                                   \
         software-properties-common             \
         ssh                                    \
@@ -40,6 +41,13 @@ RUN set -ex;                                   \
     apt install -y                             \
         autoconf                               \
         pkg-config
+
+RUN wget https://ftp.debian.org/debian/pool/main/d/debhelper/debhelper_12.1.1_all.deb
+RUN apt install -y dh-autoreconf dh-strip-nondeterminism dwz man-db po-debconf
+RUN apt install dpkg
+RUN dpkg -i debhelper_12.1.1_all.deb
+RUN apt install -f
+RUN rm debhelper_12.1.1_all.deb
 
 # Create mount points
 VOLUME /isos /output /scripts /src
