@@ -15,7 +15,7 @@ print_blue()
 
 function usage()
 {
-    print_blue "USAGE: $0 [[asus-tp370ql|hp-envy-x2]lenovo-miix-630|lenovo-yoga-c630|generic]|kernel|grub|help][-f]"
+    print_blue "USAGE: $0 [[asus-tp370ql|hp-envy-x2]lenovo-miix-630|lenovo-yoga-c630|lenovo-thinkpad-t14s|generic]|kernel|grub|help][-f]"
     return 1
 }
 
